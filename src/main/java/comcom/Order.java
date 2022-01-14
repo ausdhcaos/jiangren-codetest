@@ -2,13 +2,13 @@ package comcom;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Getter
 @Setter
 public class Order {
-    int number;
-    String code;
-    public Order(int num, String nam){
-        this.number = num;
-        this.code = nam;
-    }
+
+    public List<OrderItem> OrderItemList=new ArrayList<OrderItem>();
+
 }
